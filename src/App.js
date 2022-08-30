@@ -7,7 +7,7 @@ function App() {
   const [posts, setPosts] = useState([]);
   const [currenPost, setCurrentPost] = useState(null);
 
-  // Fetch Posts
+  // Get Posts
   const fetchPosts = async () => {
     const response = await fetch("http://localhost:5000/posts");
     const data = await response.json();
