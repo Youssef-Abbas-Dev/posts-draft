@@ -1,4 +1,4 @@
-const PostItem = ({ post, removePost, getPost }) => {
+const PostItem = ({ post }) => {
   return (
     <div className="border p-2 rounded mb-3 bg-light">
       <div className="d-flex align-items-center justify-content-between">
@@ -11,11 +11,10 @@ const PostItem = ({ post, removePost, getPost }) => {
       </div>
       <p className="my-4 text-dark">{post.description}</p>
       <div>
-        <button onClick={() => getPost(post.id)} className="btn btn-dark">
+        <button  className="btn btn-dark">
           Edit Post
         </button>
         <button
-          onClick={() => removePost(post.id)}
           className="btn btn-danger ms-3"
         >
           Delete Post
